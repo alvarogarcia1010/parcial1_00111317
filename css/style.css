@@ -1,0 +1,91 @@
+:root
+{
+  box-sizing: border-box;
+  font-size: calc(0.5em + 1vw);
+  padding: 0;
+  margin: 0;
+}
+
+*, ::before, ::after
+{
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  /* font-family: 'Monoton', cursive; */
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5em;
+  position: relative;
+
+}
+
+.nav-bar{
+    width:100%;
+    height:56px;
+}
+
+.nav-bar .links{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    background-color: #000;
+    position: relative;
+    height: 100%;
+}
+
+.links li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.links .logo{
+    height: 100px;
+    width: 100px;
+    background: #000;
+    position: absolute;
+    top: 5px;
+    padding: 0 5px 5px;
+    -webkit-clip-path:polygon(50% 0%, 100% 50%, 50% 100%, 0%50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0%50%);
+}
+
+.links .logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.background{
+    height: 1000px;
+    text-align: center;
+    background:  url(../assets/img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    display: flex;
+  }
+
+.main-content {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.main-text{
+    font-family: 'Monoton', cursive;
+    margin: 0px;
+    font-size: 8em;
+    font-weight: 200;
+    line-height: 2em;
+  }
+
+.main-content a{
+    color: #ffffff;
+    text-decoration: none;
+}
